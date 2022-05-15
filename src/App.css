@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.app-wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "h h "
+  "n c ";
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  grid-area: h;
+  background-color: rgb(119, 119, 119);
+}
+
+.header img {
+  width: 25px;
+}
+
+.nav {
+  grid-area: n;
+  background-color: rgb(98, 153, 149);
+}
+
+.content {
+  grid-area: c;
+  background-color: rgb(128, 123, 190);
+}
+
+.content img{
+  height: 300px;
+  width: 100%;
+}
